@@ -7,7 +7,7 @@
     "tags": [ "crafting_table" ],
     "ingredients": [
       {
-        "item": "arrow"
+        "item": "redstone_block"
       },
       {
         "item": "minecart"

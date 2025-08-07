@@ -7,7 +7,7 @@
     "tags": [ "crafting_table" ],
     "ingredients": [
       {
-        "item": "stick"
+        "item": "iron_ingot"
       },
       {
         "item": "tnt"
