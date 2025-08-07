@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:standi"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "arrow"
+      },
+      {
+        "item": "minecart"
+      }
+    ],
+    "result": {
+      "item": "items:standi",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

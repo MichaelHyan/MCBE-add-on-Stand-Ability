@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:standb",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "standb",
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:render_offsets": "standb"
+    }
+  }
+}

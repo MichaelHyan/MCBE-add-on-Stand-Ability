@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.stand":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"stand_a":"query.is_sneaking && query.get_equipped_item_name=='stand'"},
+						{"stand_b":"query.is_sneaking && query.get_equipped_item_name=='stand'"}
+					]
+				},
+				"stand_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s slowness 1 255 true",
+						"/effect @s darkness 2 255 true",
+						"/effect @e[type=!player,type=!item] slowness 9 255 true",
+						"/effect @e[type=!player,type=!item] weakness 9 255 true",
+						"/effect @s speed 9 3 true",
+						"/effect @s jump_boost 9 1 true",
+						"/effect @s strength 9 5 true",
+						"/effect @s resistance 9 255 true",
+						"/effect @s hunger 9 3 true",
+						"/title @s title THE WORLD"
+					]
+				},
+				"stand_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 3 true",
+						"/effect @s speed 1 1 true"
+					]
+				}
+			}
+		}
+	}
+}

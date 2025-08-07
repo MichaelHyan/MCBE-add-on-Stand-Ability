@@ -1,0 +1,441 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.standh":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"stand_a":"query.is_sneaking && query.get_equipped_item_name=='stand'"},
+						{"stand_b":"!query.is_sneaking && query.get_equipped_item_name=='stand'"},
+						{"standa_a":"query.is_sneaking && query.get_equipped_item_name=='standa'"},
+						{"standa_b":"!query.is_sneaking && query.get_equipped_item_name=='standa'"},
+						{"standb_a":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standb'"},
+						{"standb_b":"!variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standb'"},
+						{"standb_c":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standb'"},
+						{"standc_a":"query.is_sneaking && query.get_equipped_item_name=='standc'"},
+						{"standc_b":"variable.attack_time && query.get_equipped_item_name=='standc'"},
+						{"standc_c":"query.get_equipped_item_name=='standc'"},
+						{"standd_a":"variable.attack_time && query.get_equipped_item_name=='standd'"},
+						{"standd_b":"!variable.attack_time && query.get_equipped_item_name=='standd'"},
+						{"stande_a":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stande'"},
+						{"stande_b":"!variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stande'"},
+						{"stande_c":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='stande'"},
+						{"stande_d":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='stande'"},
+						{"standf_a":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standf'"},
+						{"standf_b":"!variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standf'"},
+						{"standf_c":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standf'"},
+						{"standf_d":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standf'"},
+						{"standg_a":"query.is_sneaking && query.get_equipped_item_name=='standg'"},
+						{"standg_b":"variable.attack_time && query.get_equipped_item_name=='standg'"},
+						{"standh_a":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standh'"},
+						{"standh_b":"!variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standh'"},
+						{"standh_c":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standh'"},
+						{"standh_d":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standh'"},
+						{"standi_a":"query.is_sprinting && query.get_equipped_item_name=='standi'"},
+						{"standi_b":"!query.is_sprinting && query.get_equipped_item_name=='standi'"},
+						{"standj_a":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standj'"},
+						{"standj_b":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standj'"},
+						{"standj_c":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standj'"},
+						{"standk_a":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standk'"},
+						{"standk_b":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standk'"},
+						{"standl_a":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standl'"},
+						{"standl_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standl'"}
+					]
+				},
+				"stand_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @a[r=30] darkness 10 255 true",
+						"/effect @e[rm=1] slowness 10 255 true",
+						"/effect @e[type=!player,type=!item] weakness 10 255 true",
+						"/effect @s speed 10 3 true",
+						"/effect @s jump_boost 10 1 true",
+						"/effect @s strength 10 5 true",
+						"/effect @s resistance 10 255 true",
+						"/effect @s hunger 10 3 true",
+						"/title @s actionbar THE WORLD",
+						"/playsound mob.nl"
+					]
+				},
+				"stand_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 3 true",
+						"/effect @s speed 1 1 true"
+					]
+				},
+				"standa_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @a[r=30] darkness 5 255 true",
+						"/effect @e[rm=1] slowness 5 255 true",
+						"/effect @e[type=!player,type=!item] weakness 5 255 true",
+						"/effect @s speed 5 3 true",
+						"/effect @s jump_boost 5 1 true",
+						"/effect @s strength 5 5 true",
+						"/effect @s resistance 5 255 true",
+						"/effect @s hunger 5 1 true",
+						"/title @s actionbar Star Platinum THE WORLD",
+						"/playsound mob.nl"
+					]
+				},
+				"standa_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 3 true",
+						"/effect @s speed 1 1 true"
+					]
+				},
+				"standb_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @e[type=player,rm=1,r=5] regeneration 1 5 true"
+					]
+				},
+				"standb_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 3 true",
+						"/effect @s speed 1 1 true"
+					]
+				},
+				"standb_c": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s regeneration 1 5 true"
+					]
+				},
+				"standc_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s levitation 1 1 true"
+					]
+				},
+				"standc_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @e[rm=1,r=10] slowness 10 1 true",
+						"/effect @e[rm=1,r=10] weakness 10 1 true",
+						"/effect @e[rm=1,r=10] wither 10 1 true",
+						"/effect @e[rm=1,r=10] nausea 10 1 true",
+						"/effect @s invisibility 1 1 true"
+					]
+				},
+				"standc_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s slow_falling 1 1 true"
+					]
+				},
+				"standd_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ~-1 ~-1 ~-1 ~1 ~2 ~1 air destroy",
+						"/particle minecraft:huge_explosion_emitter ~ ~ ~"
+					]
+				},
+				"standd_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s invisibility 1 1 true"
+					]
+				},
+				"stande_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon iron_golem PAGE",
+						"/effect @e[name=PAGE] strengh infinite 5 true",
+						"/effect @e[name=PAGE] speed infinite 5 true",
+						"/effect @e[name=PAGE] wither infinite 10 true"
+					]
+				},
+				"stande_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s hunger 1 3 true"
+					]
+				},
+				"stande_c": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @e[name=PAGE] instant_health 1 255 true"
+					]
+				},
+				"standf_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s slow_falling 60 1 true",
+						"/effect @s health_boost 60 9 true"
+					]
+				},
+				"standf_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s regeneration 1 5 true",
+						"/effect @s speed 1 1 true",
+						"/effect @s jump_boost 1 1 true",
+						"/particle minecraft:balloon_gas_particle ~ ~ ~"
+					]
+				},
+				"standf_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon lightning_bolt"
+					]
+				},
+				"standf_d": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/weather thunder"
+					]
+				},
+				"standg_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @e[rm=1,r=5] levitation 20 1 true"
+					]
+				},
+				"standg_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @e[rm=1,r=10] slowness 10 1 true",
+						"/effect @e[rm=1,r=10] weakness 10 1 true",
+						"/effect @e[rm=1,r=10] wither 10 1 true",
+						"/effect @e[rm=1,r=10] nausea 10 1 true",
+						"/effect @s invisibility 1 1 true"
+					]
+				},
+				"standh_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/time add 500",
+						"/title @s actionbar MADE IN HEAVEN",
+						"/effect @s clear"
+					]
+				},
+				"standh_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s clear",
+						"/effect @e[type=!player,type=!item] slowness 1 10 true"
+					]
+				},
+				"standh_c": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @e[rm=1,r=5] levitation 10 1 true"
+					]
+				},
+				"standh_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @e[rm=1,r=10] slowness 10 1 true",
+						"/effect @e[rm=1,r=10] weakness 10 1 true",
+						"/effect @e[rm=1,r=10] wither 10 1 true",
+						"/effect @e[rm=1,r=10] nausea 10 1 true",
+						"/effect @s invisibility 1 1 true"
+					]
+				},
+				"standi_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s speed 1 5 true",
+						"/summon wind_charge_projectile",
+						"/effect @s jump_boost 1 1 true",
+						"/effect @s resistance 1 255 true",
+						"/effect @e[rm=1,r=2] wither 1 255 true"
+					]
+				},
+				"standi_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 5 true"
+					]
+				},
+				"standj_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/tp @e[rm=1,r=10] ^ ^1 ^2",
+						"/effect @e[rm=1,r=5] slowness 10 3 true"
+					]
+				},
+				"standj_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s regeneration 1 3 true"
+					]
+				},
+				"standj_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s clear"
+					]
+				},
+				"standk_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon tnt ^ ^0.5 ^1.5",
+						"/summon tnt ^ ^0.5 ^1.5",
+						"/summon tnt ^ ^0.5 ^1.5",
+						"/summon wind_charge_projectile ^ ^ ^0.5"
+					]
+				},
+				"standk_b":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon tnt ^ ^0.5 ^1.5",
+						"/summon wind_charge_projectile ^ ^ ^0.5"
+					]
+				},
+				"standl_a":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon wind_charge_projectile ^ ^1 ^2"
+					]
+				},
+				"standl_b":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon wind_charge_projectile ^ ^ ^"
+					]
+				}
+			}
+		}
+ 	}
+ }

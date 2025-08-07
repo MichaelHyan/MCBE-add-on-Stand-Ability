@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:standg"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:standc"
+      },
+      {
+        "item": "gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "items:standg",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

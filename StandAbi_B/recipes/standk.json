@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:standk"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "tnt"
+      }
+    ],
+    "result": {
+      "item": "items:standk",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

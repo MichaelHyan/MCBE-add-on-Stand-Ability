@@ -1,0 +1,19 @@
+{
+"format_version":1,
+"header":{
+"description":"Hyan的奇妙替身能力",
+"name":"Stand Ability",
+"platform_locked":false,
+"uuid":"8b491072-cae7-47c2-b8b8-4009ee106d74",
+"version":[1,0,0]
+},
+"modules":[
+{
+"description":"Hyan的奇妙替身能力",
+"type":"resources",
+"uuid":"50222194-cba2-4a93-921d-ee8495950a44",
+"version":[2,1,0]
+}
+],
+"metadata": { "product_type": "addon" }
+}

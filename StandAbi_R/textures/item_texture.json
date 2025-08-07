@@ -1,0 +1,45 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+	  "stand": {
+      "textures": "stand.png"
+    },
+    "standa": {
+      "textures": "standa.png"
+    },
+    "standb": {
+      "textures": "standb.png"
+    },
+    "standc": {
+      "textures": "standc.png"
+    },
+    "standd": {
+      "textures": "standd.png"
+    },
+    "stande": {
+      "textures": "stande.png"
+    },
+    "standf": {
+      "textures": "standf.png"
+    },
+    "standg": {
+      "textures": "standg.png"
+    },
+    "standh": {
+      "textures": "standh.png"
+    },
+    "standi": {
+      "textures": "standi.png"
+    },
+    "standj": {
+      "textures": "standj.png"
+    },
+    "standk": {
+      "textures": "standk.png"
+    },
+    "standl": {
+      "textures": "standl.png"
+    }
+  }
+}
