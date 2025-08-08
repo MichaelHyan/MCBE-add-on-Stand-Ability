@@ -155,3 +155,55 @@
 “不建议室内使用。”————Hyan
 
 合成方式：木棍+风弹
+
+### 特殊武器类（已打包至booster blade模组）
+
+#### 脉冲喷流
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/blade.png)
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/gun.png)
+
+双形态武器
+
+剑形态的攻击可以附加标记，枪形态可以攻击任意距离的被标记生物
+
+蹲下点击切换形态
+
+适合多人使用
+
+“我从未感觉到写代码如此痛苦。”————hyan
+
+击杀苦力怕掉落破损发射器，使用红石块和破损发射器合成
+
+#### 瑞克五代
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/ls_off.png)
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/ls_on.png)
+
+“上一个人用这把武器是因为没有占领高地。”
+
+击杀苦力怕获得没电的瑞克五代，使用萤石块和没电的瑞克五代合成
+
+### 开发者物品类
+
+#### hyan
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/hyan.png)
+
+生成护体风
+
+“你**的风弹不允许加tag。”————hyan
+
+合成方式：绿宝石块*9
+
+#### zzst
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/zzst.png)
+
+不解释，别不小心拿手上了
+
+“昂贵一点，当彩蛋毕竟是。”————zzst
+
+合成方式：钻石块*9

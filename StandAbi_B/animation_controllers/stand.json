@@ -39,7 +39,23 @@
 						{"standk_a":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standk'"},
 						{"standk_b":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standk'"},
 						{"standl_a":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standl'"},
-						{"standl_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standl'"}
+						{"standl_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standl'"},
+						{"blade_a":"!query.is_sprinting && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
+						{"blade_b":"!query.is_sprinting && variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
+						{"blade_c":"!query.is_sprinting && !variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='blade'"},
+						{"blade_d":"!query.is_sprinting && variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='blade'"},
+						{"blade_e":"query.is_sprinting && query.get_equipped_item_name=='blade'"},
+						{"gun_a":"!query.is_sprinting && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='gun'"},
+						{"gun_b":"!query.is_sprinting && variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='gun'"},
+						{"gun_c":"!query.is_sprinting && variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='gun'"},
+						{"gun_d":"query.is_sprinting && query.get_equipped_item_name=='gun'"},
+						{"ls_on_a":"!query.is_sneaking && query.get_equipped_item_name=='ls_on'"},
+						{"ls_on_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='ls_on'"},
+						{"ls_off_a":"!query.is_sneaking && query.get_equipped_item_name=='ls_off'"},
+						{"ls_off_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='ls_off'"},
+						{"zzst":"query.get_equipped_item_name=='zzst'"},
+						{"hyan_a":"!variable.attack_time && query.get_equipped_item_name=='hyan'"},
+						{"hyan_b":"variable.attack_time && query.get_equipped_item_name=='hyan'"}
 					]
 				},
 				"stand_a": {
@@ -433,6 +449,192 @@
 					],
 					"on_entry": [
 						"/summon wind_charge_projectile ^ ^ ^"
+					]
+				},
+				"blade_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @e[tag=mx] slowness infinite 3",
+						"/effect @e[tag=mx] weakness infinite 3",
+						"/effect @s speed 1 3 true"
+					]
+				},
+				"blade_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s strength 1 5 true",
+						"/tag @e[r=3,type=!player] add mx"
+					]
+				},
+				"blade_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s resistance 1 255 true"
+					]
+				},
+				"blade_d": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:gun"
+					]
+				},
+				"blade_e": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/effect @s speed 1 5 true",
+						"/summon wind_charge_projectile",
+						"/effect @s jump_boost 1 1 true",
+						"/effect @s resistance 1 255 true"
+					]
+				},
+				"gun_a": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/kill @e[type=arrow,r=3]",
+						"/tag @e[r=3,type=!player,type=!item] add mx",
+						"/effect @e[tag=mx] slowness infinite 3",
+						"/effect @e[tag=mx] slowness infinite 3",
+						"/effect @s slow_falling 1 5 true",
+						"/effect @s jump_boost 1 3 true",
+						"/particle minecraft:balloon_gas_particle ^0.3 ^ ^",
+						"/particle minecraft:balloon_gas_particle ^-0.3 ^ ^",
+						"/execute if @e[tag=mx] run title @s actionbar Mark Detected"
+					]
+				},
+				"gun_b": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+					    "/effect @e[tag=mx] wither 1 255 true"
+					]
+				},
+				"gun_c": {
+					"transitions": [
+						{
+							"base_jeta": "(1.0)"
+						}
+					],
+					"on_entry": [
+					    "/effect @s strength 5 10 true",
+						"/kill @e[tag=mx,r=3]",
+						"/tag @e remove all",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:blade"
+					]
+				},
+				"gun_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s speed 1 3 true"
+					]
+				},
+				"ls_on_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s strength 1 10 true"
+					]
+				},
+				"ls_on_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:ls_off"
+					]
+				},
+				"ls_off_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s regeneration 1 3 true"
+					]
+				},
+				"ls_off_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:ls_on"
+					]
+				},
+				"zzst": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon tnt",
+						"/effect @s resistance 1 255 true",
+						"/effect @s levitation 1 1 true"
+
+					]
+				},
+				"hyan_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+					]
+				},
+				"hyan_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon wind_charge_projectile ^1 ^1 ^1",
+						"/summon wind_charge_projectile ^-1 ^1 ^1",
+						"/summon wind_charge_projectile ^1 ^1 ^-1",
+						"/summon wind_charge_projectile ^-1 ^1 ^-1",
+						"/summon wind_charge_projectile ^0 ^1 ^1",
+						"/summon wind_charge_projectile ^0 ^1 ^-1",
+						"/summon wind_charge_projectile ^1 ^1 ^0",
+						"/summon wind_charge_projectile ^-1 ^1 ^0"
 					]
 				}
 			}

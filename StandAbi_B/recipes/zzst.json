@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:zzst"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "aaa",
+      "aaa",
+      "aaa"
+    ],
+    "key": {
+      "a": {
+        "item": "diamond_block"
+      }
+    },
+    "result": {
+      "item": "items:zzst",
+      "count": 1
+    }
+  }
+}

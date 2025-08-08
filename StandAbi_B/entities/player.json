@@ -20,7 +20,8 @@
 					"standi",
 					"standj",
 					"standk",
-					"standl"
+					"standl",
+					"blade"
 				]
 			},
 			"animations": {
@@ -36,7 +37,10 @@
 				"standi": "controller.animation.standi",
 				"standj": "controller.animation.standj",
 				"standk": "controller.animation.standk",
-				"standl": "controller.animation.standl"
+				"standl": "controller.animation.standl",
+				"blade": "controller.animation.blade",
+				"zzst": "controller.animation.zzst",
+				"hyan":"controller.animation.hyan"
 			} 
 		},
 		"component_groups": {
@@ -581,6 +585,198 @@
             			},
             			"event": "stop_standl"
 					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:blade"
+                				}
+              				]
+            			},
+            			"event": "blade"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:blade"
+                				}
+              				]
+            			},
+            			"event": "stop_blade"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:gun"
+                				}
+              				]
+            			},
+            			"event": "gun"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:gun"
+                				}
+              				]
+            			},
+            			"event": "stop_gun"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:ls_on"
+                				}
+              				]
+            			},
+            			"event": "ls_on"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:ls_on"
+                				}
+              				]
+            			},
+            			"event": "stop_ls_on"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:ls_off"
+                				}
+              				]
+            			},
+            			"event": "ls_off"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:ls_off"
+                				}
+              				]
+            			},
+            			"event": "stop_ls_off"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:zzst"
+                				}
+              				]
+            			},
+            			"event": "zzst"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:zzst"
+                				}
+              				]
+            			},
+            			"event": "stop_zzst"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:hyan"
+                				}
+              				]
+            			},
+            			"event": "hyan"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:hyan"
+                				}
+              				]
+            			},
+            			"event": "stop_hyan"
+					}
           		}
       		],
       		"minecraft:type_family": {
@@ -894,6 +1090,120 @@
         		"remove": {
           			"component_groups": [
             			"standl"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"blade": {
+        		"add": {
+        			"component_groups": [
+          		  		"blade"
+          			]
+        		}
+      		},
+        	"stop_blade": {
+        		"remove": {
+          			"component_groups": [
+            			"blade"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"gun": {
+        		"add": {
+        			"component_groups": [
+          		  		"gun"
+          			]
+        		}
+      		},
+        	"stop_gun": {
+        		"remove": {
+          			"component_groups": [
+            			"gun"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"ls_on": {
+        		"add": {
+        			"component_groups": [
+          		  		"ls_on"
+          			]
+        		}
+      		},
+        	"stop_ls_on": {
+        		"remove": {
+          			"component_groups": [
+            			"ls_on"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"ls_off": {
+        		"add": {
+        			"component_groups": [
+          		  		"ls_off"
+          			]
+        		}
+      		},
+        	"stop_ls_off": {
+        		"remove": {
+          			"component_groups": [
+            			"ls_off"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"zzst": {
+        		"add": {
+        			"component_groups": [
+          		  		"zzst"
+          			]
+        		}
+      		},
+        	"stop_zzst": {
+        		"remove": {
+          			"component_groups": [
+            			"zzst"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"hyan": {
+        		"add": {
+        			"component_groups": [
+          		  		"hyan"
+          			]
+        		}
+      		},
+        	"stop_hyan": {
+        		"remove": {
+          			"component_groups": [
+            			"hyan"
           			]
         		},
         		"add": {
