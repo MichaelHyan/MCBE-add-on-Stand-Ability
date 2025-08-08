@@ -40,6 +40,30 @@
     },
     "standl": {
       "textures": "standl.png"
+    },
+    "blade": {
+      "textures": "blade.png"
+    },
+    "gun": {
+      "textures": "gun.png"
+    },
+    "broken_gun": {
+      "textures": "broken_gun.png"
+    },
+    "ls_on": {
+      "textures": "ls_on.png"
+    },
+    "ls_off": {
+      "textures": "ls_off.png"
+    },
+    "ls_broken": {
+      "textures": "ls_off.png"
+    },
+    "zzst": {
+      "textures": "zzst.png"
+    },
+    "hyan": {
+      "textures": "hyan.png"
     }
   }
 }

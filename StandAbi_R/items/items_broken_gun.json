@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:broken_gun",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "broken_gun",
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:render_offsets": "broken_gun"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:ls_off",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "ls_off",
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:render_offsets": "ls_off"
+    }
+  }
+}

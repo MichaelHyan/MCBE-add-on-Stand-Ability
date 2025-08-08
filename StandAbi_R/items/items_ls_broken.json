@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:ls_broken",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "ls_broken",
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:render_offsets": "ls_broken"
+    }
+  }
+}
