@@ -1,9 +1,37 @@
 {
-"mob.nl": {
+  "the.world": {
     "category": "hostile",
     "min_distance": 10.0,
     "sounds": [
-      "sounds/nl"
+      "sounds/tw"
+    ]
+  },
+  "yaluji": {
+    "category": "hostile",
+    "min_distance": 10.0,
+    "sounds": [
+      "sounds/yaluji"
+    ]
+  },
+  "muda": {
+    "category": "hostile",
+    "min_distance": 10.0,
+    "sounds": [
+      "sounds/muda"
+    ]
+  },
+  "ora": {
+    "category": "hostile",
+    "min_distance": 10.0,
+    "sounds": [
+      "sounds/ora"
+    ]
+  },
+  "star.platium.the.world": {
+    "category": "hostile",
+    "min_distance": 10.0,
+    "sounds": [
+      "sounds/sp"
     ]
   },
   "world": {
