@@ -2,19 +2,19 @@
   "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
-    "identifier": "items:stand"
+    "identifier": "items:stand_arrow"
     },
     "tags": [ "crafting_table" ],
     "ingredients": [
       {
-        "item": "items:stand_arrow"
+        "item": "arrow"
       },
       {
-        "item": "lapis_lazuli"
+        "item": "rotten_flesh"
       }
     ],
     "result": {
-      "item": "items:stand",
+      "item": "items:stand_arrow",
       "data": 50,
       "count": 1
     }

@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animation_controllers": {
-		"controller.animation.standh":{
+		"controller.animation.stand":{
 			"states":{
 				"base_jeta":{
 					"transitions":[
@@ -43,6 +43,9 @@
 						{"standk_b":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standk'"},
 						{"standl_a":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standl'"},
 						{"standl_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standl'"},
+						{"standm_a":"query.is_sneaking && query.get_equipped_item_name=='standm'"},
+						{"standn_a":"variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standn'"},
+						{"standn_b":"variable.attack_time && query.is_jumping && query.get_equipped_item_name=='standn'"},
 						{"blade_a":"!query.is_sprinting && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
 						{"blade_b":"!query.is_sprinting && variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
 						{"blade_c":"!query.is_sprinting && !variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='blade'"},
@@ -485,6 +488,46 @@
 					],
 					"on_entry": [
 						"/summon wind_charge_projectile ^ ^ ^"
+					]
+				},
+				"standm_a":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @a[r=30] darkness 10 255 true",
+						"/effect @s invisibility 10 255 true",
+						"/effect @e[type=!player,type=!item] weakness 10 255 true",
+						"/effect @s weakness 10 255 true",
+						"/effect @s resistance 10 255 true",
+						"/effect @s hunger 10 3 true",
+						"/title @s actionbar King Crimson",
+						"/playsound king.crimson"
+					]
+				},
+				"standn_a":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/fill ^ ^2 ^2 ^ ^ ^ air",
+						"/tag @e[r=3,type=!player] add th",
+						"/tp @e[tag=th] ~ ~-10 ~",
+						"/kill @e[tag=th,rm=3]"
+					]
+				},
+				"standn_b":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp ^ ^1 ^5"
 					]
 				},
 				"blade_a": {

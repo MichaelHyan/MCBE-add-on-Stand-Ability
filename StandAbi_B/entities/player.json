@@ -8,110 +8,17 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"stand",
-					"standa",
-					"standb",
-					"standc",
-					"standd",
-					"stande",
-					"standf",
-					"standg",
-					"standh",
-					"standi",
-					"standj",
-					"standk",
-					"standl",
-					"blade"
+					"stand"
 				]
 			},
 			"animations": {
-				"stand": "controller.animation.stand",
-				"standa": "controller.animation.standa",
-				"standb": "controller.animation.standb",
-				"standc": "controller.animation.standc",
-				"standd": "controller.animation.standd",
-				"stande": "controller.animation.stande",
-				"standf": "controller.animation.standf",
-				"standg": "controller.animation.standg",
-				"standh":"controller.animation.standh",
-				"standi": "controller.animation.standi",
-				"standj": "controller.animation.standj",
-				"standk": "controller.animation.standk",
-				"standl": "controller.animation.standl",
-				"blade": "controller.animation.blade",
-				"zzst": "controller.animation.zzst",
-				"hyan":"controller.animation.hyan"
+				"stand": "controller.animation.stand"
 			} 
 		},
 		"component_groups": {
 			"base":{
 				"minecraft:variant":{
 					"value": 0
-				}
-			},
-			"stand":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standa":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standb":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standc":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standd":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"stande":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standf":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standg":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standh":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standi":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standj":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standk":{
-				"minecraft:variant":{
-					"value": 1
-				}
-			},
-			"standl":{
-				"minecraft:variant":{
-					"value": 1
 				}
 			},
 			"minecraft:add_bad_omen": {
@@ -584,6 +491,70 @@
               				]
             			},
             			"event": "stop_standl"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standm"
+                				}
+              				]
+            			},
+            			"event": "standm"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standm"
+                				}
+              				]
+            			},
+            			"event": "stop_standm"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standn"
+                				}
+              				]
+            			},
+            			"event": "standn"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standn"
+                				}
+              				]
+            			},
+            			"event": "stop_standn"
 					}
           		},
 				{
@@ -1090,6 +1061,44 @@
         		"remove": {
           			"component_groups": [
             			"standl"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standm": {
+        		"add": {
+        			"component_groups": [
+          		  		"standm"
+          			]
+        		}
+      		},
+        	"stop_standm": {
+        		"remove": {
+          			"component_groups": [
+            			"stand"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standn": {
+        		"add": {
+        			"component_groups": [
+          		  		"standn"
+          			]
+        		}
+      		},
+        	"stop_standn": {
+        		"remove": {
+          			"component_groups": [
+            			"standn"
           			]
         		},
         		"add": {

@@ -7,7 +7,7 @@
     "tags": [ "crafting_table" ],
     "ingredients": [
       {
-        "item": "arrow"
+        "item": "items:stand_arrow"
       },
       {
         "item": "tnt"
