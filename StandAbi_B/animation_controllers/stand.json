@@ -5,6 +5,8 @@
 			"states":{
 				"base_jeta":{
 					"transitions":[
+						{"overdrive":"query.is_item_equipped == 0 && query.is_in_water == 0 && query.is_in_lava == 0"},
+						{"dict":"variable.attack_time && query.get_equipped_item_name=='dict'"},
 						{"stand_a":"!query.is_jumping && !variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='stand'"},
 						{"stand_b":"!query.is_jumping && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stand'"},
 						{"stand_c":"!query.is_jumping && variable.attack_time  && query.get_equipped_item_name=='stand'"},
@@ -62,6 +64,31 @@
 						{"zzst":"query.get_equipped_item_name=='zzst'"},
 						{"hyan_a":"!variable.attack_time && query.get_equipped_item_name=='hyan'"},
 						{"hyan_b":"variable.attack_time && query.get_equipped_item_name=='hyan'"}
+					]
+				},
+				"overdrive": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s[tag=ro] strength 10 1 true",
+						"/effect @s[tag=ro] speed 10 1 true",
+						"/effect @s[tag=ro] resistance 10 1 true",
+						"/effect @s[tag=ro] regeneration 10 2 true",
+						"/effect @s[tag=ro] health_boost 60 4 true"
+					]
+				},
+				"dict": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tag @s add ro",
+						"/replaceitem entity @s slot.weapon.mainhand 0 book"
 					]
 				},
 				"stand_a": {

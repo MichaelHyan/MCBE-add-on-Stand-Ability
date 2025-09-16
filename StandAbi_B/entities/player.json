@@ -86,6 +86,38 @@
                   					"subject": "self",
                    					"operator": "=",
                  					"domain": "hand",
+                  					"value": "items:dict"
+                				}
+              				]
+            			},
+            			"event": "dict"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:dict"
+                				}
+              				]
+            			},
+            			"event": "stop_dict"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
                   					"value": "items:stand"
                 				}
               				]
@@ -822,6 +854,25 @@
       		}
     	},
     	"events": {
+			"dict": {
+        		"add": {
+        			"component_groups": [
+          		  		"dict"
+          			]
+        		}
+      		},
+        	"stop_dict": {
+        		"remove": {
+          			"component_groups": [
+            			"dict"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
         	"stand": {
         		"add": {
         			"component_groups": [

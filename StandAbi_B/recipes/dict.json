@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:dict"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "book"
+      },
+      {
+        "item": "gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "items:dict",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

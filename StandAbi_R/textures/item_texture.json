@@ -2,7 +2,10 @@
   "resource_pack_name": "vanilla",
   "texture_name": "atlas.items",
   "texture_data": {
-	  "stand_arrow": {
+	  "dict": {
+      "textures": "dict.png"
+    },
+    "stand_arrow": {
       "textures": "stand_arrow.png"
     },
     "stand": {

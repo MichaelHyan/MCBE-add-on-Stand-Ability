@@ -135,6 +135,22 @@
 
 ### 特殊技能类
 
+#### 波纹疾走
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/dict.png)
+
+强化自身力量，使用波纹疾走指南后终身启用
+
+空手状态下获得全面属性强化，附带一定持续时间
+
+水中无法使用
+
+“你的下一句话是，我要在你微弱的波纹前用血管刺穿你的躯体！”————乔瑟夫乔斯达
+
+合成方式：书＋金锭
+
+只需使用一次，使用后返还空白书
+
 #### 铁之随侍
 
 ![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/stande.png)
