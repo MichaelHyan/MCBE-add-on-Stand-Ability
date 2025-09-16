@@ -122,6 +122,9 @@
 
 #### 轰炸空间
 
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standm.png)
+
+
 消除面前一切物体，也可以消除空间达成瞬移效果
 
 “我常常思考被我消去的东西去哪了，但思考很累，所以我就不思考了。”————虹村亿泰
