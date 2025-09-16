@@ -122,7 +122,7 @@
 
 #### 轰炸空间
 
-![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standm.png)
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standn.png)
 
 
 消除面前一切物体，也可以消除空间达成瞬移效果
