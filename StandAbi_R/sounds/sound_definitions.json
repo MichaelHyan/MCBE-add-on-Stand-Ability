@@ -34,6 +34,13 @@
       "sounds/sp"
     ]
   },
+  "king.crimson": {
+    "category": "hostile",
+    "min_distance": 10.0,
+    "sounds": [
+      "sounds/kc"
+    ]
+  },
   "world": {
     "category": "hostile",
     "min_distance": 10.0,

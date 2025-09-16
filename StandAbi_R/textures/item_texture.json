@@ -2,7 +2,10 @@
   "resource_pack_name": "vanilla",
   "texture_name": "atlas.items",
   "texture_data": {
-	  "stand": {
+	  "stand_arrow": {
+      "textures": "stand_arrow.png"
+    },
+    "stand": {
       "textures": "stand.png"
     },
     "standa": {
@@ -40,6 +43,12 @@
     },
     "standl": {
       "textures": "standl.png"
+    },
+    "standm": {
+      "textures": "standm.png"
+    },
+    "standn": {
+      "textures": "standn.png"
     },
     "blade": {
       "textures": "blade.png"
