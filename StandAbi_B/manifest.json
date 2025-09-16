@@ -4,7 +4,7 @@
 "description":"Hyan的奇妙替身能力",
 "name":"Stand Ability",
 "uuid":"8f2084a2-7d4d-4da1-b088-3ecf7e9bf2d5",
-"version":[1,0,0],
+"version":[2,5,2],
 "min_engine_version":[1,10,0]
 },
 "modules":[
