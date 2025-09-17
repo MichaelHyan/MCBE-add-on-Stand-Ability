@@ -133,6 +133,24 @@
 
 合成方式：替身箭+TNT+末影珍珠
 
+#### 臭名昭著的BIG
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/stando.png)
+
+把自己弄个半死并清除附近所有实体
+
+合成方式：猪肉*8+替身箭
+
+#### 性感手枪
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standp.png)
+
+在物品栏第一格时生效
+
+启用时箭拥有自瞄效果，无论发射方式
+
+合成方式：替身箭+弓
+
 ### 特殊技能类
 
 #### 波纹疾走

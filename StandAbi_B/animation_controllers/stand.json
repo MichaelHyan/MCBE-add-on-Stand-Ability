@@ -17,7 +17,7 @@
 						{"standb_a":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standb'"},
 						{"standb_b":"!variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standb'"},
 						{"standb_c":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standb'"},
-						{"standc_a":"query.is_sneaking && query.get_equipped_item_name=='standc'"},
+						{"standc_a":"query.is_jumping && query.get_equipped_item_name=='standc'"},
 						{"standc_b":"variable.attack_time && query.get_equipped_item_name=='standc'"},
 						{"standc_c":"query.get_equipped_item_name=='standc'"},
 						{"standd_a":"variable.attack_time && query.get_equipped_item_name=='standd'"},
@@ -48,6 +48,8 @@
 						{"standm_a":"query.is_sneaking && query.get_equipped_item_name=='standm'"},
 						{"standn_a":"variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standn'"},
 						{"standn_b":"variable.attack_time && query.is_jumping && query.get_equipped_item_name=='standn'"},
+						{"stando_a":"variable.attack_time && query.get_equipped_item_name=='stando'"},
+						{"standp_a":"query.is_item_name_any('slot.hotbar', 0, 'items:standp')"},
 						{"blade_a":"!query.is_sprinting && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
 						{"blade_b":"!query.is_sprinting && variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
 						{"blade_c":"!query.is_sprinting && !variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='blade'"},
@@ -236,7 +238,7 @@
 						"/effect @e[rm=1,r=10] weakness 10 1 true",
 						"/effect @e[rm=1,r=10] wither 10 1 true",
 						"/effect @e[rm=1,r=10] nausea 10 1 true",
-						"/effect @s invisibility 1 1 true"
+						"/tag @e remove all"
 					]
 				},
 				"standc_c": {
@@ -555,6 +557,28 @@
 					],
 					"on_entry": [
 						"/tp ^ ^1 ^5"
+					]
+				},
+				"stando_a":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/kill @e[type=!player,type=!item,type=!villager,r=15]",
+						"/effect @s resistance 2 1 true",
+						"/effect @s instant_damage 1 2 true"
+					]
+				},
+				"standp_a":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @e[type=arrow,r=50] @n[type=!arrow,type=!player,type=!item,type=!villager,r=50]"
 					]
 				},
 				"blade_a": {

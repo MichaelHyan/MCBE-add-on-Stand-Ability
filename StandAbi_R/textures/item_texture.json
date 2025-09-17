@@ -53,6 +53,12 @@
     "standn": {
       "textures": "standn.png"
     },
+	  "stando": {
+      "textures": "stando.png"
+    },
+    "standp": {
+      "textures": "standp.png"
+    },
     "blade": {
       "textures": "blade.png"
     },

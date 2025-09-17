@@ -19,7 +19,7 @@
         },
         {
           "type": "item",
-          "name": "tunekeshi:b5",
+          "name": "items:ls_broken",
           "weight": 3,
           "functions": [
             {
