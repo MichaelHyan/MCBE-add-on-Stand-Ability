@@ -48,6 +48,7 @@
 						{"standm_a":"query.is_sneaking && query.get_equipped_item_name=='standm'"},
 						{"standn_a":"variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standn'"},
 						{"standn_b":"variable.attack_time && query.is_jumping && query.get_equipped_item_name=='standn'"},
+						{"standn_c":"query.is_sneaking && query.get_equipped_item_name=='standn'"},
 						{"stando_a":"variable.attack_time && query.get_equipped_item_name=='stando'"},
 						{"standp_a":"query.is_item_name_any('slot.hotbar', 0, 'items:standp')"},
 						{"blade_a":"!query.is_sprinting && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
@@ -557,6 +558,16 @@
 					],
 					"on_entry": [
 						"/tp ^ ^1 ^5"
+					]
+				},
+				"standn_c":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @n[type=!arrow,type=!player,type=!item,type=!villager,r=10] ^ ^1 ^2"
 					]
 				},
 				"stando_a":{
