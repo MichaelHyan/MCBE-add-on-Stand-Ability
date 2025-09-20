@@ -67,7 +67,7 @@
 						{"ls_on_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='ls_on'"},
 						{"ls_off_a":"!query.is_sneaking && query.get_equipped_item_name=='ls_off'"},
 						{"ls_off_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='ls_off'"},
-						{"zzst":"query.get_equipped_item_name=='zzst'"},
+						{"zzst":"query.is_sneaking && query.get_equipped_item_name=='zzst'"},
 						{"hyan_a":"!variable.attack_time && query.get_equipped_item_name=='hyan'"},
 						{"hyan_b":"variable.attack_time && query.get_equipped_item_name=='hyan'"}
 					]
@@ -610,7 +610,7 @@
 							}
 					],
 					"on_entry": [
-						"/effect @e[r=5] regeneration 1 2 true"
+						"/effect @e[r=5] regeneration 1 5 true"
 					]
 				},
 				"standr_b":{
@@ -782,7 +782,6 @@
 						"/summon tnt",
 						"/effect @s resistance 1 255 true",
 						"/effect @s levitation 1 1 true"
-
 					]
 				},
 				"hyan_a": {

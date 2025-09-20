@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:requiem_arrow"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:stand_arrow"
+      },
+      {
+        "item": "nether_star"
+      }
+    ],
+    "result": {
+      "item": "items:requiem_arrow",
+      "data": 50,
+      "count": 1
+    }
+  }
+}
