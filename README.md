@@ -151,9 +151,35 @@
 
 启用时箭拥有自瞄效果，无论发射方式
 
-"1，2，3，5，6，7。"
+"米4达"
 
 合成方式：替身箭+弓
+
+#### 回音Act3
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standq.png)
+
+在物品栏第一格时生效
+
+减速最近的生物
+
+"S.H.I.T."————回音Act3
+
+合成方式：替身箭+灵魂沙
+
+#### 黄金体验 镇魂曲
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standr.png)
+
+在物品栏第一格时生效
+
+附件生物难以接近你，足够接近时立刻秒杀
+
+使用物品时恢复附近生物生命
+
+“你将无法达到任何真实，这就是黄金体验镇魂曲”————乔鲁诺·乔巴拿
+
+合成方式：替身箭+下界之星
 
 ### 特殊技能类
 
