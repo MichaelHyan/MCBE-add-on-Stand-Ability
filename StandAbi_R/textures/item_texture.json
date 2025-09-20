@@ -59,6 +59,12 @@
     "standp": {
       "textures": "standp.png"
     },
+    "standq": {
+      "textures": "standq.png"
+    },
+    "standr": {
+      "textures": "standr.png"
+    },
     "blade": {
       "textures": "blade.png"
     },

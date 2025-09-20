@@ -662,6 +662,70 @@
                   					"subject": "self",
                    					"operator": "=",
                  					"domain": "hand",
+                  					"value": "items:standq"
+                				}
+              				]
+            			},
+            			"event": "standq"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standq"
+                				}
+              				]
+            			},
+            			"event": "stop_standq"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standr"
+                				}
+              				]
+            			},
+            			"event": "standr"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standr"
+                				}
+              				]
+            			},
+            			"event": "stop_standr"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
                   					"value": "items:blade"
                 				}
               				]
@@ -1252,6 +1316,44 @@
         		"remove": {
           			"component_groups": [
             			"standp"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standq": {
+        		"add": {
+        			"component_groups": [
+          		  		"standq"
+          			]
+        		}
+      		},
+        	"stop_standq": {
+        		"remove": {
+          			"component_groups": [
+            			"standq"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standr": {
+        		"add": {
+        			"component_groups": [
+          		  		"standr"
+          			]
+        		}
+      		},
+        	"stop_standr": {
+        		"remove": {
+          			"component_groups": [
+            			"standr"
           			]
         		},
         		"add": {

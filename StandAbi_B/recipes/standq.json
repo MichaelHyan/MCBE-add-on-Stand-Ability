@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:standq"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:stand_arrow"
+      },
+      {
+        "item": "soul_sand"
+      }
+    ],
+    "result": {
+      "item": "items:standq",
+      "data": 50,
+      "count": 1
+    }
+  }
+}
