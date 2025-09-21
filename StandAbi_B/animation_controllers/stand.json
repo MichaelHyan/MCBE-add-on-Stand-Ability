@@ -63,15 +63,6 @@
 						{"standu_a":"!variable.attack_time && query.get_equipped_item_name=='standu'"},
 						{"standu_b":"variable.attack_time && query.get_equipped_item_name=='standu'"},
 						{"teleport":"variable.attack_time && query.get_equipped_item_name=='teleport'"},
-						{"blade_a":"!query.is_sprinting && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
-						{"blade_b":"!query.is_sprinting && variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='blade'"},
-						{"blade_c":"!query.is_sprinting && !variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='blade'"},
-						{"blade_d":"!query.is_sprinting && variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='blade'"},
-						{"blade_e":"query.is_sprinting && query.get_equipped_item_name=='blade'"},
-						{"gun_a":"!query.is_sprinting && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='gun'"},
-						{"gun_b":"!query.is_sprinting && variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='gun'"},
-						{"gun_c":"!query.is_sprinting && variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='gun'"},
-						{"gun_d":"query.is_sprinting && query.get_equipped_item_name=='gun'"},
 						{"ls_on_a":"!query.is_sneaking && query.get_equipped_item_name=='ls_on'"},
 						{"ls_on_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='ls_on'"},
 						{"ls_off_a":"!query.is_sneaking && query.get_equipped_item_name=='ls_off'"},
@@ -675,7 +666,7 @@
 					],
 					"on_entry": [
 						"/fill ^-1 ^-1 ^-1 ^1 ^1 ^1 fire replace air",
-						"/effect @s fire_resistanse 60 1 true"
+						"/effect @s fire_resistance 60 1 true"
 					]
 				},
 				"standt_b":{
@@ -685,8 +676,8 @@
 							}
 					],
 					"on_entry": [
-						"/fill ^-20 ^-10 ^-20 ^20 ^10 ^20 fire replace air",
-						"/effect @s fire_resistanse 60 1 true"
+						"/fill ^-15 ^-15 ^-15 ^15 ^15 ^15 fire replace air",
+						"/effect @s fire_resistance 60 1 true"
 					]
 				},
 				"standt_c":{
@@ -696,7 +687,7 @@
 							}
 					],
 					"on_entry": [
-						"/fill ^-15 ^-15 ^-15 ^15 ^15 ^15 air replace fire"
+						"/fill ^-20 ^-20 ^-20 ^20 ^20 ^20 air replace fire"
 					]
 				},
 				"standu_a":{
