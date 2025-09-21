@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:teleport"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "dirt"
+      },
+      {
+        "item": "glass_bottle"
+      }
+    ],
+    "result": {
+      "item": "items:teleport",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

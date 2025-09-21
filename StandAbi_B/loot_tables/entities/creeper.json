@@ -19,7 +19,7 @@
         },
         {
           "type": "item",
-          "name": "items:broken_gun",
+          "name": "items:gold_ingot",
           "weight": 3,
           "functions": [
             {

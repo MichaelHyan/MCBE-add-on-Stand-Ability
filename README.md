@@ -191,6 +191,38 @@
 
 合成方式：替身箭+虫箭
 
+#### 隐者之紫
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/stands.png)
+
+可以同时使用波纹的力量
+
+下蹲传送附近的实体至身前，下蹲点击获取地图
+
+“你的替身最没用了！”————DIO
+
+合成方式：波纹疾走指南+替身箭
+
+#### 红色魔术师
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standt.png)
+
+攻击放火，跳起攻击放更大的火，下蹲灭火
+
+“牢底坐穿”————hyan
+
+合成方式：火药+替身箭
+
+#### 替身？
+
+控制名为STAND的盔甲架(stand?)，攻击会操作盔甲架(stand?)攻击
+
+盔甲架需自己放置，重命名为STAND
+
+“不是stand用不起，是stand更有性价比”————hyan
+
+合成方式：盔甲架+替身箭
+
 ### 特殊技能类
 
 #### 波纹疾走
@@ -247,6 +279,14 @@
 
 ### 武器类
 
+#### 传送药水
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/teleport.png)
+
+传送到队友附近
+
+合成方式：泥土+水瓶
+
 #### 原始之杖
 
 ![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standj.png)
@@ -280,28 +320,6 @@
 “我艹，用这个也能上天”————zzst
 
 合成方式：木棍+风弹
-
-### 特殊武器类（已打包至booster blade模组）
-
-#### 脉冲喷流
-
-![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/blade.png)
-
-![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/gun.png)
-
-双形态武器
-
-剑形态的攻击可以附加标记，枪形态可以攻击任意距离的被标记生物
-
-蹲下点击切换形态
-
-适合多人使用
-
-“我从未感觉到写代码如此痛苦。”————hyan
-
-“我从未感觉到画草图如此痛苦。”————zzst
-
-击杀苦力怕掉落破损发射器，使用红石块和破损发射器合成
 
 #### 瑞克五代
 

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:standu"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "armor_stand"
+      },
+      {
+        "item": "items:stand_arrow"
+      }
+    ],
+    "result": {
+      "item": "items:standu",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

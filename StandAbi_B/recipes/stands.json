@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:stands"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:dict"
+      },
+      {
+        "item": "items:stand_arrow"
+      }
+    ],
+    "result": {
+      "item": "items:stands",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

@@ -726,11 +726,11 @@
                   					"subject": "self",
                    					"operator": "=",
                  					"domain": "hand",
-                  					"value": "items:blade"
+                  					"value": "items:stands"
                 				}
               				]
             			},
-            			"event": "blade"
+            			"event": "stands"
           			}
         		},
 				{
@@ -742,11 +742,11 @@
                   					"subject": "self",
                  		 			"operator": "<>",
                   					"domain": "hand",
-                  					"value": "items:blade"
+                  					"value": "items:stands"
                 				}
               				]
             			},
-            			"event": "stop_blade"
+            			"event": "stop_stands"
 					}
           		},
 				{
@@ -758,11 +758,11 @@
                   					"subject": "self",
                    					"operator": "=",
                  					"domain": "hand",
-                  					"value": "items:gun"
+                  					"value": "items:standt"
                 				}
               				]
             			},
-            			"event": "gun"
+            			"event": "standt"
           			}
         		},
 				{
@@ -774,11 +774,75 @@
                   					"subject": "self",
                  		 			"operator": "<>",
                   					"domain": "hand",
-                  					"value": "items:gun"
+                  					"value": "items:standt"
                 				}
               				]
             			},
-            			"event": "stop_gun"
+            			"event": "stop_standt"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standu"
+                				}
+              				]
+            			},
+            			"event": "standu"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standu"
+                				}
+              				]
+            			},
+            			"event": "stop_standu"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:teleport"
+                				}
+              				]
+            			},
+            			"event": "teleport"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:teleport"
+                				}
+              				]
+            			},
+            			"event": "stop_teleport"
 					}
           		},
 				{
@@ -1362,17 +1426,17 @@
           			]
         		}
       		},
-			"blade": {
+			"stands": {
         		"add": {
         			"component_groups": [
-          		  		"blade"
+          		  		"stands"
           			]
         		}
       		},
-        	"stop_blade": {
+        	"stop_stands": {
         		"remove": {
           			"component_groups": [
-            			"blade"
+            			"stands"
           			]
         		},
         		"add": {
@@ -1381,17 +1445,55 @@
           			]
         		}
       		},
-			"gun": {
+			"standt": {
         		"add": {
         			"component_groups": [
-          		  		"gun"
+          		  		"standt"
           			]
         		}
       		},
-        	"stop_gun": {
+        	"stop_standt": {
         		"remove": {
           			"component_groups": [
-            			"gun"
+            			"standt"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standu": {
+        		"add": {
+        			"component_groups": [
+          		  		"standu"
+          			]
+        		}
+      		},
+        	"stop_standu": {
+        		"remove": {
+          			"component_groups": [
+            			"standu"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"teleport": {
+        		"add": {
+        			"component_groups": [
+          		  		"teleport"
+          			]
+        		}
+      		},
+        	"stop_teleport": {
+        		"remove": {
+          			"component_groups": [
+            			"teleport"
           			]
         		},
         		"add": {

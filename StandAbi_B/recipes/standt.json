@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:standt"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "gunpowder"
+      },
+      {
+        "item": "items:stand_arrow"
+      }
+    ],
+    "result": {
+      "item": "items:standt",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

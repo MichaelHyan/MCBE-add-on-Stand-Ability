@@ -65,14 +65,17 @@
     "standr": {
       "textures": "standr.png"
     },
-    "blade": {
-      "textures": "blade.png"
+    "stands": {
+      "textures": "stands.png"
     },
-    "gun": {
-      "textures": "gun.png"
+    "standt": {
+      "textures": "standt.png"
     },
-    "broken_gun": {
-      "textures": "broken_gun.png"
+    "standu": {
+      "textures": "standu.png"
+    },
+    "teleport": {
+      "textures": "teleport.png"
     },
     "ls_on": {
       "textures": "ls_on.png"
