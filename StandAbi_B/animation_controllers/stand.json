@@ -57,6 +57,7 @@
 						{"stands_a":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='stands'"},
 						{"stands_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='stands'"},
 						{"stands_c":"!variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stands'"},
+						{"stands_d":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stands'"},
 						{"standt_a":"variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standt'"},
 						{"standt_b":"variable.attack_time && query.is_jumping && query.get_equipped_item_name=='standt'"},
 						{"standt_c":"query.is_sneaking && query.get_equipped_item_name=='standt'"},
@@ -239,8 +240,7 @@
 						"/effect @e[rm=1,r=10] slowness 10 1 true",
 						"/effect @e[rm=1,r=10] weakness 10 1 true",
 						"/effect @e[rm=1,r=10] wither 10 1 true",
-						"/effect @e[rm=1,r=10] nausea 10 1 true",
-						"/tag @e remove all"
+						"/effect @e[rm=1,r=10] nausea 10 1 true"
 					]
 				},
 				"standc_c": {
@@ -619,7 +619,7 @@
 							}
 					],
 					"on_entry": [
-						"/effect @e[rm=2,r=10] slowness 1 2 true",
+						"/effect @e[rm=2,r=10,type=!player] slowness 1 2 true",
 						"/kill @e[type=arrrow,r=10]",
 						"/kill @e[type=!player,type=!item,type=!villager,r=2]"
 					]
@@ -631,7 +631,7 @@
 							}
 					],
 					"on_entry": [
-						"/tp @n[type=!arrow,type=!player,r=5] ^ ^1 ^2"
+						"/tag @e remove hp"
 					]
 				},
 				"stands_b":{
@@ -655,7 +655,18 @@
 						"/effect @s[tag=ro] speed 10 1 true",
 						"/effect @s[tag=ro] resistance 10 1 true",
 						"/effect @s[tag=ro] regeneration 10 2 true",
-						"/effect @s[tag=ro] health_boost 60 4 true"
+						"/effect @s[tag=ro] health_boost 60 4 true",
+						"/tp @e[tag=hp] ^-1 ^1 ^-1"
+					]
+				},
+				"stands_d":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tag @e[r=2,type=!player,type=!arrow,type=!villager] add hp"
 					]
 				},
 				"standt_a":{
