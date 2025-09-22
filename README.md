@@ -353,6 +353,20 @@
 
 ### 开发者物品类
 
+#### Java系列物品
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/javabean.png)
+
+Java豆，某种产自爪洼的特殊咖啡豆，可以使用篝火烤制可可豆合成
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/java_sword.png)
+
+Java豆可用于合成充满bug的Java之剑，伤害趋近于无限
+
+可使用9个Java豆合成Java，虽然没什么用，但可以让你会Java的朋友眼前一黑
+
+"我有个想法，可以做个蛇出来，然后击杀蛇获得python..."————hyan的不知名朋友
+
 #### hyan
 
 ![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/hyan.png)
