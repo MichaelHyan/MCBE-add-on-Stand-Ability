@@ -215,6 +215,8 @@
 
 #### 替身？
 
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standu.png)
+
 控制名为STAND的盔甲架(stand?)，攻击会操作盔甲架(stand?)攻击
 
 盔甲架需自己放置，重命名为STAND
@@ -330,6 +332,24 @@
 “上一个人用这把武器是因为没有占领高地。”
 
 击杀苦力怕获得没电的瑞克五代，使用萤石块和没电的瑞克五代合成
+
+#### 胜利与誓约之剑
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/excalibur.png)
+
+传说中的剑
+
+“只有真正的勇者能够拔出这把剑”————古老的传说
+
+合成方式：钻石剑+下界之星
+
+#### 胜利与誓约之剑
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/rockalibur.png)
+
+“一位勇者不信，于是把石头一起拿起来用了”————另一个古老的传说
+
+合成方式：钻石剑+石头
 
 ### 开发者物品类
 

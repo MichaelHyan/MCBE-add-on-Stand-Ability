@@ -854,6 +854,70 @@
                   					"subject": "self",
                    					"operator": "=",
                  					"domain": "hand",
+                  					"value": "items:excalibur"
+                				}
+              				]
+            			},
+            			"event": "excalibur"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:excalibur"
+                				}
+              				]
+            			},
+            			"event": "stop_excalibur"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:rockalibur"
+                				}
+              				]
+            			},
+            			"event": "rockalibur"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:rockalibur"
+                				}
+              				]
+            			},
+            			"event": "stop_rockalibur"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
                   					"value": "items:ls_on"
                 				}
               				]
@@ -907,6 +971,38 @@
               				]
             			},
             			"event": "stop_ls_off"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:java_sword"
+                				}
+              				]
+            			},
+            			"event": "java_sword"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:java_sword"
+                				}
+              				]
+            			},
+            			"event": "stop_java_sword"
 					}
           		},
 				{
@@ -1502,6 +1598,44 @@
           			]
         		}
       		},
+			"excalibur": {
+        		"add": {
+        			"component_groups": [
+          		  		"excalibur"
+          			]
+        		}
+      		},
+        	"stop_excalibur": {
+        		"remove": {
+          			"component_groups": [
+            			"excalibur"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"rockalibur": {
+        		"add": {
+        			"component_groups": [
+          		  		"rockalibur"
+          			]
+        		}
+      		},
+        	"stop_rockalibur": {
+        		"remove": {
+          			"component_groups": [
+            			"rockalibur"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
 			"ls_on": {
         		"add": {
         			"component_groups": [
@@ -1532,6 +1666,25 @@
         		"remove": {
           			"component_groups": [
             			"ls_off"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"java_sword": {
+        		"add": {
+        			"component_groups": [
+          		  		"java_sword"
+          			]
+        		}
+      		},
+        	"stop_java_sword": {
+        		"remove": {
+          			"component_groups": [
+            			"java_sword"
           			]
         		},
         		"add": {

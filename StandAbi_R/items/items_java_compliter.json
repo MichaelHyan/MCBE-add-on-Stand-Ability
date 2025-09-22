@@ -1,0 +1,16 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:java_compliter",
+      "category": "Items",
+      "register_to_creative_menu": true
+    },
+    "components": {
+      "minecraft:icon": "java_compliter",
+      "minecraft:render_offsets": "apple",
+      "minecraft:use_animation": "eat",
+      "minecraft:creative_category": "Items"
+    }
+  }
+}

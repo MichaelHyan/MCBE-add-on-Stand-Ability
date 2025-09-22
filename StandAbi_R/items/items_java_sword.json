@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:java_sword",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "java_sword",
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:render_offsets": "java_sword"
+    }
+  }
+}

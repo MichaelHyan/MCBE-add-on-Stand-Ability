@@ -12,7 +12,7 @@
       "textures": "stand.png"
     },
     "standa": {
-      "textures": "standa.png"
+      "textures": "standa_n.png"
     },
     "standb": {
       "textures": "standb.png"
@@ -85,6 +85,21 @@
     },
     "ls_broken": {
       "textures": "ls_off.png"
+    },
+    "excalibur": {
+      "textures": "excalibur.png"
+    },
+    "rockalibur": {
+      "textures": "rockalibur.png"
+    },
+    "javabean": {
+      "textures": "javabean.png"
+    },
+    "java_sword": {
+      "textures": "java_sword.png"
+    },
+    "java_compliter": {
+      "textures": "java.png"
     },
     "zzst": {
       "textures": "zzst.png"

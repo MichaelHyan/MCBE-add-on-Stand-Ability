@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:excalibur"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "nether_star"
+      },
+      {
+        "item": "diamond_sword"
+      }
+    ],
+    "result": {
+      "item": "items:excalibur",
+      "data": 50,
+      "count": 1
+    }
+  }
+}
