@@ -11,9 +11,9 @@
 						{"stand_b":"!query.is_jumping && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stand'"},
 						{"stand_c":"!query.is_jumping && variable.attack_time  && query.get_equipped_item_name=='stand'"},
 						{"stand_d":"query.is_jumping && variable.attack_time && query.get_equipped_item_name=='stand'"},
-						{"standa_a":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standa'"},
+						{"standa_a":"!variable.attack_time && query.is_sneaking && !query.is_jumping && query.get_equipped_item_name=='standa'"},
 						{"standa_b":"!variable.attack_time && !query.is_sneaking && !query.is_jumping && query.get_equipped_item_name=='standa'"},
-						{"standa_c":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standa'"},
+						{"standa_c":"variable.attack_time && !query.is_sneaking && !query.is_jumping && query.get_equipped_item_name=='standa'"},
 						{"standa_d":"variable.attack_time && query.is_jumping && query.get_equipped_item_name=='standa'"},
 						{"standb_a":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standb'"},
 						{"standb_b":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standb'"},
@@ -879,6 +879,7 @@
 					],
 					"on_entry": [
 						"/kill @n[type=!player,r=3]",
+						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
 						"/replaceitem entity @s slot.weapon.mainhand 0 air"
 					]
 				},
