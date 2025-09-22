@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:red_brick"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "cobblestone"
+      },
+      {
+        "item": "dirt"
+      }
+    ],
+    "result": {
+      "item": "items:red_brick",
+      "data": 50,
+      "count": 1
+    }
+  }
+}

@@ -335,6 +335,14 @@
 
 击杀苦力怕获得没电的瑞克五代，使用萤石块和没电的瑞克五代合成
 
+#### 红砖
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/red_brick.png)
+
+不结实，但很便宜
+
+合成方式：泥土+圆石
+
 #### 胜利与誓约之剑
 
 ![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/excalibur.png)

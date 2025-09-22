@@ -1014,6 +1014,38 @@
                   					"subject": "self",
                    					"operator": "=",
                  					"domain": "hand",
+                  					"value": "items:red_brick"
+                				}
+              				]
+            			},
+            			"event": "red_brick"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:red_brick"
+                				}
+              				]
+            			},
+            			"event": "stop_red_brick"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
                   					"value": "items:zzst"
                 				}
               				]
@@ -1685,6 +1717,25 @@
         		"remove": {
           			"component_groups": [
             			"java_sword"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"red_brick": {
+        		"add": {
+        			"component_groups": [
+          		  		"red_brick"
+          			]
+        		}
+      		},
+        	"stop_red_brick": {
+        		"remove": {
+          			"component_groups": [
+            			"red_brick"
           			]
         		},
         		"add": {

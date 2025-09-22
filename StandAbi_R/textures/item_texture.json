@@ -101,6 +101,9 @@
     "java_compliter": {
       "textures": "java.png"
     },
+    "red_brick": {
+      "textures": "red_brick.png"
+    },
     "zzst": {
       "textures": "zzst.png"
     },
