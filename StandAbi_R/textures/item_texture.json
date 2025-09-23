@@ -104,6 +104,9 @@
     "red_brick": {
       "textures": "red_brick.png"
     },
+    "jetpack": {
+      "textures": "jetpack.png"
+    },
     "zzst": {
       "textures": "zzst.png"
     },

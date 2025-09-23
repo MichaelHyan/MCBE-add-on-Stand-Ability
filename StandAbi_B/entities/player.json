@@ -1046,6 +1046,38 @@
                   					"subject": "self",
                    					"operator": "=",
                  					"domain": "hand",
+                  					"value": "items:jetpack"
+                				}
+              				]
+            			},
+            			"event": "jetpack"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:jetpack"
+                				}
+              				]
+            			},
+            			"event": "stop_jetpack"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
                   					"value": "items:zzst"
                 				}
               				]
@@ -1736,6 +1768,25 @@
         		"remove": {
           			"component_groups": [
             			"red_brick"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"jetpack": {
+        		"add": {
+        			"component_groups": [
+          		  		"jetpack"
+          			]
+        		}
+      		},
+        	"stop_jetpack": {
+        		"remove": {
+          			"component_groups": [
+            			"jetpack"
           			]
         		},
         		"add": {

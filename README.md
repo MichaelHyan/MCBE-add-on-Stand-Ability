@@ -291,6 +291,14 @@
 
 合成方式：泥土+水瓶
 
+#### 喷气背包
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/jetpack.png)
+
+按跳起飞
+
+合成方式：火药+铁锭
+
 #### 原始之杖
 
 ![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standj.png)
@@ -339,7 +347,7 @@
 
 ![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/red_brick.png)
 
-不结实，但很便宜
+神秘的东方神兵，人人都用得起
 
 合成方式：泥土+圆石
 

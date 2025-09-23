@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:jetpack",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "jetpack",
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:render_offsets": "jetpack"
+    }
+  }
+}

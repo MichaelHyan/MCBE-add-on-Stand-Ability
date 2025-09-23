@@ -76,6 +76,8 @@
 						{"ls_off_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='ls_off'"},
 						{"java_sword":"query.get_equipped_item_name=='java_sword'"},
 						{"red_brick":"variable.attack_time && query.get_equipped_item_name=='red_brick'"},
+						{"jetpack_a":"!query.is_jumping && query.get_equipped_item_name=='jetpack'"},
+						{"jetpack_b":"query.is_jumping && query.get_equipped_item_name=='jetpack'"},
 						{"zzst":"query.is_sneaking && query.get_equipped_item_name=='zzst'"},
 						{"hyan_a":"!variable.attack_time && query.get_equipped_item_name=='hyan'"},
 						{"hyan_b":"variable.attack_time && query.get_equipped_item_name=='hyan'"}
@@ -881,6 +883,32 @@
 						"/kill @n[type=!player,r=3]",
 						"/particle minecraft:critical_hit_emitter ^ ^2.8 ^2.5",
 						"/replaceitem entity @s slot.weapon.mainhand 0 air"
+					]
+				},
+				"jetpack_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s slow_falling 1 1 true",
+						"/particle minecraft:balloon_gas_particle ^0.3 ^ ^",
+						"/particle minecraft:balloon_gas_particle ^-0.3 ^ ^"
+					]
+				},
+				"jetpack_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s levitation 1 5 true",
+						"/particle minecraft:basic_flame_particle ^0.3 ^ ^",
+						"/particle minecraft:basic_flame_particle ^-0.3 ^ ^",
+						"/particle minecraft:balloon_gas_particle ^0.3 ^ ^",
+						"/particle minecraft:balloon_gas_particle ^-0.3 ^ ^"
 					]
 				},
 				"zzst": {
