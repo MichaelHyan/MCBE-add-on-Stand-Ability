@@ -8,11 +8,13 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"stand"
+					"stand",
+					"gun"
 				]
 			},
 			"animations": {
-				"stand": "controller.animation.stand"
+				"stand": "controller.animation.stand",
+				"gun": "controller.animation.gun"
 			} 
 		},
 		"component_groups": {

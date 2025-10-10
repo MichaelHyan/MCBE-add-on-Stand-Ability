@@ -74,6 +74,15 @@
     "standu": {
       "textures": "standu.png"
     },
+    "standva": {
+      "textures": "standva.png"
+    },
+    "standvb": {
+      "textures": "standvb.png"
+    },
+    "standvc": {
+      "textures": "standvc.png"
+    },
     "teleport": {
       "textures": "teleport.png"
     },

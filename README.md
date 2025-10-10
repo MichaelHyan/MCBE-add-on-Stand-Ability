@@ -215,6 +215,18 @@
 
 合成方式：火药+替身箭
 
+#### 皇帝
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standva.png)
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standvb.png)
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standvc.png)
+
+左键攻击，右键切换瞄准
+
+“打不死也能让你飞起来”————hyan
+
+合成方式：弩+替身箭
+
 #### 替身？
 
 ![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standu.png)

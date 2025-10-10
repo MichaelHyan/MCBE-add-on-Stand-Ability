@@ -7,13 +7,13 @@
 					"transitions":[
 						{"overdrive":"query.is_item_equipped == 0 && query.is_in_water == 0 && query.is_in_lava == 0"},
 						{"dict":"variable.attack_time && query.get_equipped_item_name=='dict'"},
-						{"stand_a":"!query.is_jumping && !variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='stand'"},
-						{"stand_b":"!query.is_jumping && !variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stand'"},
-						{"stand_c":"!query.is_jumping && variable.attack_time  && query.get_equipped_item_name=='stand'"},
+						{"stand_a":"query.is_using_item && !query.is_jumping && !variable.attack_time && query.get_equipped_item_name=='stand'"},
+						{"stand_b":"!query.is_using_item && !query.is_jumping && !variable.attack_time && query.get_equipped_item_name=='stand'"},
+						{"stand_c":"!query.is_jumping && variable.attack_time && query.get_equipped_item_name=='stand'"},
 						{"stand_d":"query.is_jumping && variable.attack_time && query.get_equipped_item_name=='stand'"},
-						{"standa_a":"!variable.attack_time && query.is_sneaking && !query.is_jumping && query.get_equipped_item_name=='standa'"},
-						{"standa_b":"!variable.attack_time && !query.is_sneaking && !query.is_jumping && query.get_equipped_item_name=='standa'"},
-						{"standa_c":"variable.attack_time && !query.is_sneaking && !query.is_jumping && query.get_equipped_item_name=='standa'"},
+						{"standa_a":"query.is_using_item && !variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standa'"},
+						{"standa_b":"!query.is_using_item && !variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standa'"},
+						{"standa_c":"!query.is_using_item && variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standa'"},
 						{"standa_d":"variable.attack_time && query.is_jumping && query.get_equipped_item_name=='standa'"},
 						{"standb_a":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standb'"},
 						{"standb_b":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standb'"},
@@ -124,7 +124,8 @@
 						"/effect @s resistance 10 255 true",
 						"/effect @s hunger 10 3 true",
 						"/title @s actionbar THE WORLD",
-						"/playsound the.world @a"
+						"/playsound the.world @a",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:stand"
 					]
 				},
 				"stand_b": {
@@ -176,7 +177,8 @@
 						"/effect @s resistance 5 255 true",
 						"/effect @s hunger 5 1 true",
 						"/title @s actionbar Star Platinum THE WORLD",
-						"/playsound star.platium.the.world @a"
+						"/playsound star.platium.the.world @a",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:standa"
 					]
 				},
 				"standa_b": {

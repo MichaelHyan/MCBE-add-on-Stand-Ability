@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.gun":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"vaa":"query.is_using_item && query.get_equipped_item_name=='standva'"},
+						{"vab":"variable.attack_time && query.get_equipped_item_name=='standva'"},
+						{"vba":"query.is_using_item && query.get_equipped_item_name=='standvb'"},
+						{"vbb":"variable.attack_time && query.get_equipped_item_name=='standvb'"},
+						{"vca":"query.is_using_item && query.get_equipped_item_name=='standvc'"},
+						{"vcb":"variable.attack_time && query.get_equipped_item_name=='standvc'"}
+					]
+				},
+				"vaa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:standvb"
+					]
+				},
+				"vab": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon arrow ~ ~3 ~",
+						"/tp @e[type=arrow,r=50] @n[rm=1,type=!arrow,type=!item,r=50]"
+					]
+				},
+				"vba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:standvc"
+					]
+				},
+				"vbb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon arrow ~ ~5 ~",
+						"/tp @e[type=arrow,r=50] @n[type=!arrow,type=!player,type=!item,r=50]"
+					]
+				},
+				"vca": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:standva"
+					]
+				},
+				"vcb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon arrow ~ ~3 ~",
+						"/tp @e[type=arrow,r=50] @n[rm=1,type=player,r=50]"
+					]
+				}
+			}
+		}
+ 	}
+ }
