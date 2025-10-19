@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "items:standw"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:stand_arrow"
+      },
+      {
+        "item": "emerald"
+      }
+    ],
+    "result": {
+      "item": "items:standw",
+      "count": 1
+    }
+  }
+}

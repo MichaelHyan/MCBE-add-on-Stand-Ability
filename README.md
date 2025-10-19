@@ -215,6 +215,16 @@
 
 合成方式：火药+替身箭
 
+#### 绿色法皇
+
+![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standw.png)
+
+右键获得绿宝石水花(?)，下蹲右键使用结界(对性能没有信心的不要使用)
+
+“接招吧，DIO! 半径20米的绿宝石水花！”————花京院典明
+
+合成方式：绿宝石+替身箭
+
 #### 皇帝
 
 ![](https://github.com/MichaelHyan/MCBE-add-on-Stand-Ability/blob/main/StandAbi_R/standva.png)

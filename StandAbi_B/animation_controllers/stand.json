@@ -46,7 +46,7 @@
 						{"standk_b":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standk'"},
 						{"standl_a":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='standl'"},
 						{"standl_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standl'"},
-						{"standm_a":"query.is_sneaking && query.get_equipped_item_name=='standm'"},
+						{"standm_a":"query.is_using_item && query.get_equipped_item_name=='standm'"},
 						{"standn_a":"variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standn'"},
 						{"standn_b":"variable.attack_time && query.is_jumping && query.get_equipped_item_name=='standn'"},
 						{"standn_c":"query.is_sneaking && query.get_equipped_item_name=='standn'"},

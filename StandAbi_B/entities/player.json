@@ -9,11 +9,13 @@
 			"scripts": {
 				"animate": [
 					"stand",
+					"standw",
 					"gun"
 				]
 			},
 			"animations": {
 				"stand": "controller.animation.stand",
+				"standw": "controller.animation.standw",
 				"gun": "controller.animation.gun"
 			} 
 		},

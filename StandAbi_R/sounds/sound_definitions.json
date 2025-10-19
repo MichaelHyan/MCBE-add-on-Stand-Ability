@@ -20,6 +20,13 @@
       "sounds/muda"
     ]
   },
+  "rero": {
+    "category": "hostile",
+    "min_distance": 10.0,
+    "sounds": [
+      "sounds/rero"
+    ]
+  },
   "ora": {
     "category": "hostile",
     "min_distance": 10.0,
