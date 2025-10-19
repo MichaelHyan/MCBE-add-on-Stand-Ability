@@ -1,0 +1,1 @@
+execute at @e[type=snowball] run particle minecraft:villager_happy
