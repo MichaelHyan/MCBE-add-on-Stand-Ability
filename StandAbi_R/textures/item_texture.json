@@ -86,6 +86,9 @@
     "standw": {
       "textures": "standw.png"
     },
+    "standx": {
+      "textures": "standx.png"
+    },
     "teleport": {
       "textures": "teleport.png"
     },

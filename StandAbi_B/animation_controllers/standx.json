@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.standx":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"xa":"variable.attack_time && query.get_equipped_item_name=='standx'"}
+					]
+				},
+				"xa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:standx 16"
+					]
+				}
+			}
+		}
+ 	}
+ }

@@ -10,12 +10,14 @@
 				"animate": [
 					"stand",
 					"standw",
+					"standx",
 					"gun"
 				]
 			},
 			"animations": {
 				"stand": "controller.animation.stand",
 				"standw": "controller.animation.standw",
+				"standx":"controller.animation.standx",
 				"gun": "controller.animation.gun"
 			} 
 		},
