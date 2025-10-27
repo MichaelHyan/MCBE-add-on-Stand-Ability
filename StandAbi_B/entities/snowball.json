@@ -17,7 +17,7 @@
           "impact_damage": {
             "damage": 10,
             "knockback": true,
-            "semi_random_diff_damage": false
+            "semi_random_diff_damage": true
           },
           "definition_event": {
             "affect_projectile": true,
@@ -28,7 +28,7 @@
           },
           "particle_on_hit": {
             "particle_type": "snowballpoof",
-            "num_particles": 6,
+            "num_particles": 10,
             "on_entity_hit": true,
             "on_other_hit": true
           }
