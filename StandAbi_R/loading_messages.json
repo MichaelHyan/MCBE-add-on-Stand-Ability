@@ -1,0 +1,50 @@
+{
+	"loading_messages": [
+	"stand.loading.1",
+	"stand.loading.2",
+	"stand.loading.3",
+	"stand.loading.4",
+	"stand.loading.5",
+	"stand.loading.6",
+	"stand.loading.7",
+	"stand.loading.8",
+	"stand.loading.9",
+	"stand.loading.10",
+	"stand.loading.11",
+	"stand.loading.12",
+	"stand.loading.13",
+	"stand.loading.14",
+	"stand.loading.15",
+	"stand.loading.16",
+	"stand.loading.17"
+	],
+	"creative_loading_messages": [
+	"stand.loading.1",
+	"stand.loading.2",
+	"stand.loading.3",
+	"stand.loading.4",
+	"stand.loading.5",
+	"stand.loading.6",
+	"stand.loading.7",
+	"stand.loading.8",
+	"stand.loading.9",
+	"stand.loading.10",
+	"stand.loading.11",
+	"stand.loading.12",
+	"stand.loading.13",
+	"stand.loading.14",
+	"stand.loading.15",
+	"stand.loading.16",
+	"stand.loading.17"
+	],
+	"realms_loading_messages": [
+	  "tips.realms.1",
+	  "tips.realms.2",
+	  "tips.realms.3",
+	  "tips.realms.4",
+	  "tips.realms.5",
+	  "tips.realms.6",
+	  "tips.realms.7",
+	  "tips.realms.8"
+	]
+}
