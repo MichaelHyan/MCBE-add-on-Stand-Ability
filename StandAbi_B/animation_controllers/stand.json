@@ -59,9 +59,10 @@
 						{"stands_b":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='stands'"},
 						{"stands_c":"!variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stands'"},
 						{"stands_d":"variable.attack_time && !query.is_sneaking && query.get_equipped_item_name=='stands'"},
-						{"standt_a":"variable.attack_time && !query.is_jumping && query.get_equipped_item_name=='standt'"},
-						{"standt_b":"variable.attack_time && query.is_jumping && query.get_equipped_item_name=='standt'"},
-						{"standt_c":"query.is_sneaking && query.get_equipped_item_name=='standt'"},
+						{"standt_a":"variable.attack_time && !query.is_sneaking && !query.is_jumping && query.get_equipped_item_name=='standt'"},
+						{"standt_b":"variable.attack_time && !query.is_sneaking && query.is_jumping && query.get_equipped_item_name=='standt'"},
+						{"standt_c":"variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standt'"},
+						{"standt_d":"!variable.attack_time && query.is_sneaking && query.get_equipped_item_name=='standt'"},
 						{"standu_a":"!variable.attack_time && query.get_equipped_item_name=='standu'"},
 						{"standu_b":"variable.attack_time && query.get_equipped_item_name=='standu'"},
 						{"excalibur_a":"!variable.attack_time && !query.is_jumping && !query.is_sneaking && query.get_equipped_item_name=='excalibur'"},
@@ -721,6 +722,16 @@
 					],
 					"on_entry": [
 						"/fill ^-20 ^-20 ^-20 ^20 ^20 ^20 air replace fire"
+					]
+				},
+				"standt_d":{
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:standt 64"
 					]
 				},
 				"standu_a":{
