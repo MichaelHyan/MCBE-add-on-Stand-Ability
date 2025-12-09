@@ -5,7 +5,15 @@
       "identifier": "minecraft:snowball",
       "is_spawnable": false,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "scripts": {
+				"animate": [
+					"splush"
+				]
+			},
+			"animations": {
+				"splush": "controller.animation.splush"
+			} 
     },
     "components": {
       "minecraft:collision_box": {
